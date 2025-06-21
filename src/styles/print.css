@@ -1,0 +1,68 @@
+@media print {
+  /* Hide non-essential elements */
+  nav,
+  footer,
+  button,
+  .fixed,
+  [role="navigation"],
+  [role="complementary"] {
+    display: none !important;
+  }
+
+  /* Reset background colors and text colors */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Ensure content is visible */
+  .dark\:bg-gray-900 {
+    background-color: white !important;
+  }
+
+  .dark\:text-white,
+  .text-primary-600,
+  .text-gray-700 {
+    color: black !important;
+  }
+
+  /* Optimize images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Improve text readability */
+  p, h1, h2, h3, h4, h5, h6 {
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Show URLs after links */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+
+  /* Reset dimensions */
+  .h-\[300px\],
+  .h-\[400px\] {
+    height: auto !important;
+  }
+
+  /* Ensure proper page breaks */
+  .mb-12 {
+    margin-bottom: 2cm;
+    page-break-after: always;
+  }
+
+  /* Optimize grid layout for print */
+  .grid {
+    display: block !important;
+  }
+
+  .grid > * {
+    margin-bottom: 1cm;
+  }
+} 

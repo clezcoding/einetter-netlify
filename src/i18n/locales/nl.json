@@ -1,0 +1,29 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "windows": "Ramen",
+      "doors": "Deuren",
+      "sunProtection": "Zonwering",
+      "insectProtection": "Insectenwering",
+      "carpentry": "Schrijnwerk"
+    },
+    "buttons": {
+      "readMore": "Lees Meer",
+      "contact": "Contact",
+      "next": "Volgende",
+      "previous": "Vorige",
+      "close": "Sluiten"
+    },
+    "sunProtection": {
+      "outside": "Buitenzonwering",
+      "inside": "Binnenzonwering",
+      "partner": "LEHA & WO & WO Partner"
+    },
+    "accessibility": {
+      "skipToContent": "Ga naar inhoud",
+      "darkMode": "Donkere modus",
+      "language": "Taal wijzigen"
+    }
+  }
+} 

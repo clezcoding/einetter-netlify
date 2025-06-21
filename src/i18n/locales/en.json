@@ -1,0 +1,29 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "windows": "Windows",
+      "doors": "Doors",
+      "sunProtection": "Sun Protection",
+      "insectProtection": "Insect Protection",
+      "carpentry": "Carpentry"
+    },
+    "buttons": {
+      "readMore": "Read More",
+      "contact": "Contact Us",
+      "next": "Next",
+      "previous": "Previous",
+      "close": "Close"
+    },
+    "sunProtection": {
+      "outside": "Outside Protection",
+      "inside": "Inside Protection",
+      "partner": "LEHA & WO & WO Partner"
+    },
+    "accessibility": {
+      "skipToContent": "Skip to content",
+      "darkMode": "Toggle dark mode",
+      "language": "Change language"
+    }
+  }
+} 

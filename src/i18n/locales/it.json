@@ -1,0 +1,29 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "windows": "Finestre",
+      "doors": "Porte",
+      "sunProtection": "Protezione Solare",
+      "insectProtection": "Protezione Insetti",
+      "carpentry": "Falegnameria"
+    },
+    "buttons": {
+      "readMore": "Leggi di Più",
+      "contact": "Contattaci",
+      "next": "Avanti",
+      "previous": "Indietro",
+      "close": "Chiudi"
+    },
+    "sunProtection": {
+      "outside": "Protezione Esterna",
+      "inside": "Protezione Interna",
+      "partner": "Partner LEHA & WO & WO"
+    },
+    "accessibility": {
+      "skipToContent": "Vai al contenuto",
+      "darkMode": "Modalità scura",
+      "language": "Cambia lingua"
+    }
+  }
+} 
