@@ -2,8 +2,9 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Use Netcup's PORT or a very high port number to avoid conflicts
-const PORT = process.env.PORT || process.env.NODE_PORT || 8080;
+// Netcup uses Nginx reverse proxy, so we need a very high port
+// Try multiple high ports to avoid conflicts
+const PORTS = [9000, 9001, 9002, 9003, 9004, 9005, 9006, 9007, 9008, 9009];
 
 // Serve static files from the dist directory
 app.use(express.static(path.join(__dirname, 'dist')));
@@ -13,24 +14,34 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-// Simple error handling
-app.listen(PORT, '0.0.0.0', (err) => {
-  if (err) {
-    console.error('❌ Error starting server:', err);
-    // Try alternative port
-    const altPort = PORT + 1000;
-    console.log(`🔄 Trying alternative port: ${altPort}`);
-    app.listen(altPort, '0.0.0.0', (err2) => {
-      if (err2) {
-        console.error('❌ Failed to start on alternative port:', err2);
-        process.exit(1);
-      }
-      console.log(`✅ Server is running on port ${altPort}`);
-      console.log(`🌐 Server URL: http://localhost:${altPort}`);
-    });
-  } else {
-    console.log(`✅ Server is running on port ${PORT}`);
-    console.log(`🌐 Server URL: http://localhost:${PORT}`);
-    console.log(`📁 Serving files from: ${path.join(__dirname, 'dist')}`);
+// Function to try different ports
+function tryPort(portIndex) {
+  if (portIndex >= PORTS.length) {
+    console.error('❌ All ports are in use. Cannot start server.');
+    process.exit(1);
   }
-}); 
+
+  const port = PORTS[portIndex];
+  console.log(`🔄 Trying port ${port}...`);
+
+  const server = app.listen(port, '0.0.0.0', () => {
+    console.log(`✅ Server is running on port ${port}`);
+    console.log(`🌐 Server URL: http://localhost:${port}`);
+    console.log(`📁 Serving files from: ${path.join(__dirname, 'dist')}`);
+    console.log(`🔧 Netcup will proxy requests to this port`);
+  });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      console.log(`❌ Port ${port} is in use, trying next port...`);
+      server.close();
+      tryPort(portIndex + 1);
+    } else {
+      console.error('❌ Server error:', err);
+      process.exit(1);
+    }
+  });
+}
+
+// Start trying ports
+tryPort(0); 
