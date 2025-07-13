@@ -22,7 +22,7 @@ export default function About() {
     {
       icon: Tool,
       title: 'Expertise',
-      description: 'Professionelle Beratung und maßgeschneiderte Lösungen für Ihr Zuhause'
+      description: 'Professionelle Beratung und Maßgeschneiderte Lösungen für Ihr Zuhause'
     },
     {
       icon: Heart,

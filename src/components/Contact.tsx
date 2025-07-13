@@ -31,13 +31,13 @@ export default function Contact() {
             <p className="text-gray-600">+43 660 7355966</p>
           </motion.a>
           <motion.a
-            href="tel:+436503385216"
+            href="tel:+436606093930"
             whileHover={{ scale: 1.05 }}
             className="flex flex-col items-center p-6 bg-primary-50 rounded-xl cursor-pointer transition-colors hover:bg-primary-100"
           >
             <Phone className="w-8 h-8 text-primary-600 mb-4" />
             <h3 className="text-xl font-semibold mb-2">Tobias Einetter</h3>
-            <p className="text-gray-600">+43 650 3385216</p>
+            <p className="text-gray-600">+43 660 6093930</p>
           </motion.a>
         </div>
         <div className="grid md:grid-cols-2 gap-8 mt-8">

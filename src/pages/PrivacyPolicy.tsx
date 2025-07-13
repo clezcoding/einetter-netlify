@@ -207,7 +207,7 @@ const PrivacyPolicy = () => {
           <h5 className="text-lg font-semibold text-gray-900 mt-8 mb-4">Sie erreichen uns unter folgenden Kontaktdaten:</h5>
           <p className="mb-6">
             <b>Webseitenbetreiber:</b> Tischlerei Einetter OG<br />
-            <b>Telefonnummer:</b> 04715391<br />
+            <b>Telefonnummer:</b> +43 4715391<br />
             <b>Email:</b> office@einetter.at
           </p>
           

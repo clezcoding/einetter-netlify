@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Einetter</h3>
-            <p className="text-primary-100">Ihr Spezialist für Fenster,Türen,Sonnen- & Insektenschutz seit über 69 Jahren.</p>
+            <p className="text-primary-100">Ihr Spezialist für Fenster, Türen, Sonnen- & Insektenschutz seit über 69 Jahren.</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Öffnungszeiten</h3>

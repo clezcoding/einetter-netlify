@@ -212,7 +212,7 @@ Die Urheberrechte Dritter werden vom Betreiber mit bestmöglicher Sorgfalt beach
                 <div>
                   <p className="text-gray-700">
                     <strong>Webseitenbetreiber:</strong> Tischlerei Einetter OG<br />
-                    <strong>Telefonnummer:</strong> 04715 391<br />
+                    <strong>Telefonnummer:</strong> +43 4715391<br />
                     <strong>Email:</strong> office@einetter.at
                   </p>
                 </div>

@@ -365,7 +365,7 @@ export default function Sonnenschutz() {
                 className="flex items-center text-primary-600"
               >
                 <Star className="w-6 h-6 mr-2" />
-                <span className="font-semibold">LEHA & WO&WO Partner</span>
+                <span className="font-semibold">Schlotterer • LEHA • WO&WO Partner</span>
               </motion.div>
             </div>
 
@@ -379,6 +379,13 @@ export default function Sonnenschutz() {
                 <div className="absolute top-0 left-0 w-2 h-full bg-primary-500"></div>
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">
                   Als offizieller Partner von <a 
+                    href="https://www.schlotterer.com/de" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200"
+                  >
+                    Schlotterer
+                  </a>, <a 
                     href="https://leha.at/" 
                     target="_blank" 
                     rel="noopener noreferrer"

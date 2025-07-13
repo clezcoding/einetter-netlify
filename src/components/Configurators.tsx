@@ -12,7 +12,7 @@ export default function Configurators() {
     },
     {
       title: 'DOORS Designer',
-      description: 'Entwerfen Sie Ihre maßgeschneiderte Haustür mit unserem interaktiven 3D-Tool. Wählen Sie aus vielfältigen Designs, Materialien und Ausstattungsoptionen.',
+      description: 'Entwerfen Sie Ihre Maßgeschneiderte Haustür mit unserem interaktiven 3D-Tool. Wählen Sie aus vielfältigen Designs, Materialien und Ausstattungsoptionen.',
       url: 'https://configurator.varialis.net/?bpi=BC27B19A-C106-404F-96C2-60B7AC4C9FD0',
       image: 'https://i.ibb.co/B2z3dYZT/doors.png',
     },

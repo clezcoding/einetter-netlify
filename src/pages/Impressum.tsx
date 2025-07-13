@@ -24,7 +24,7 @@ const Impressum = () => {
           </p>
           
           <p className="mb-6">
-            <b>Anschrift:</b> Kötschach 221, 9640 Kötschach Kötschach
+            <b>Anschrift:</b> Kötschach 221, 9640 Kötschach-Mauthen
           </p>
           
           <p className="mb-6">
@@ -35,7 +35,7 @@ const Impressum = () => {
           
           <p className="mb-6">
             <b>Kontaktdaten:</b> <br />
-            Telefon: 04715391 <br />
+            Telefon: +43 4715391 <br />
             Email: office@einetter.at <br />
           </p>
           
